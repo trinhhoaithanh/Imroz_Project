@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 /* HEADER */
 .header{
@@ -373,4 +374,93 @@
     color: #717173;
     font-size: 18px;
     line-height: 30px;
+}
+/* CITE  */
+.cite{
+    background-color: #F9F9F9;
+    
+    
+}
+.cite .container{
+    margin: auto;
+    max-width: 1280px;
+    padding: 100px 0;
+}
+.cite .container .cite-content .quote p{
+    font-size: 30px;
+    line-height: 48px;
+    color: #18181b;
+    font-weight: 500;
+    margin-bottom: 30px;
+    margin-top: -16px;
+    position: relative;
+    z-index: 2;
+}
+.cite .container .cite-content .quote p::before{
+    content: "";
+    background-image: url(../img/image-1.png);
+    position: absolute;
+    left: -42px;
+    top: -68px;
+    opacity: 1;
+    background-repeat: no-repeat;
+    z-index: -1;
+    height: 100%;
+    width: 177px;
+}
+.cite .container .cite-content .author-info {
+    font-size: 18px;
+    font-weight: 300;
+    color: #8c8c8c;
+    line-height:50px ;
+}
+.cite .container .cite-content .author-info span{
+    color: #E34363;
+}
+.cite .container .cite-avatar{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: none;
+    max-width: 510px;
+    margin: 0 auto;
+}
+.cite .container .cite-avatar li{
+    padding: 0 15px;
+    width: calc(100%/3);
+    margin-bottom: 30px;
+}
+.cite .container .cite-avatar li .thumb{
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+.cite .container .cite-avatar li .thumb::after{
+    content: "";
+    background-color: hsla(0deg, 0%, 100%, 0.5);
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.cite .container .cite-avatar li .thumb img{
+    border-radius: 6px;
+    width: 100%;
+    object-fit: cover;
+    max-width: 140px;
+    max-height: 140px;
+}
+.cite .container .cite-avatar li a.active .thumb{
+    transform: scale(1.1);
+    object-fit: contain;
+    border-radius: 6px;
+    box-shadow: 0 10px 15px 0 rgb(0 0 0 / 10%);
+}
+.cite .container .cite-avatar li a.active .thumb::after{
+    background-color: hsla(0deg, 0%, 100%, 0);
 }
