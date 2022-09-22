@@ -278,5 +278,99 @@
     opacity: 0;
 }
 .project .container .project-content .project-item::after:hover{
-    
+    opacity: 1;
+   
+}
+/* ABOUT */
+.about{
+    max-width: 1280px;
+    margin: auto;
+}
+.about .container{
+    padding:100px 0;
+}
+.about .container .about-content .thumbnail img{
+    width: 90%;
+    border-radius: 10px;
+
+}
+.about .container .about-content .about-left .about-title h3{
+    background: linear-gradient(120deg, #1C99FE 20.69%, #7644FF 50.19%, #E34363 79.69%);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 18px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    display: inline-block;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.about .container .about-content .about-left .about-title h1{
+    font-weight: 600;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.about .container .about-content .about-left .about-title p{
+    line-height: 30px;
+    color: rgba(29,29,36,.75);
+    font-size: 18px;
+    font-weight: 300;
+}
+.about .container .about-content .tab-container .tab-style{
+    border: 1px solid #E6E6E6;
+    border-radius: 40px;
+    flex-wrap: wrap;
+    margin-right: 100px;
+
+}
+.about .container .about-content .tab-container .tab-style .nav-item{
+
+    margin: 0;
+}
+.about .container .about-content .tab-container .tab-style .nav-item button{
+    margin: -1px -2px -1px;
+    padding: 0.83333em 34px;
+    border: none;
+    background-color: transparent;
+    color: #56555A;
+    font-weight: 700;
+    display: inline-block;
+}
+.about .container .about-content .tab-container .tab-style .nav-item button.active{
+    background-color: #FD4766;
+    color: white;
+    border-radius: 40px;
+}
+.single-tab-content{
+    padding-top: 20px;
+}
+.tab-content .single-tab-content h4{
+
+}
+.tab-content .single-tab-content .list-style{
+    display: inline;
+}
+.tab-content .single-tab-content .list-style .list-item{
+    list-style: none;
+    padding-right: 10px;
+    color: #56555A;
+    font-weight: 300;
+    line-height: 2.5;
+}
+.tab-content .single-tab-content .list-style .list-item i{
+    color: #E34363;
+    margin-right: 10px;
+}
+.single-tab-content span{
+    font-weight: 300;
+    color: #717173;
+    font-size: 18px;
+    line-height: 30px;
+}
+.single-tab-content p{
+    font-weight: 300;
+    color: #717173;
+    font-size: 18px;
+    line-height: 30px;
 }
